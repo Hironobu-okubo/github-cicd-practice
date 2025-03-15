@@ -7,7 +7,7 @@ jobs:
       - run: |
           echo "${{ github.actor }}"
           echo "${{ github.event }}"
-          echo "${{ github.run_id }}
+          echo "${{ github.run_id }}"
           echo "${{ github.head_ref }}"
           echo "${{ github.workspace }}"
           echo "${{ github.repository }}"
