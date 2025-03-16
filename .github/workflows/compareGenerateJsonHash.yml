@@ -7,8 +7,8 @@ jobs:
       - run: printenv | grep '_FUNC'
         env:
           CONTAINS_FUNC: ${{ contains('Hello', 'ell') }}
-          STARTS_FUNC: ${{ startWith('Hello', 'He') }}
-          ENDS_FUNC: ${{ endwWith('Hello', 'lo')}}
+          STARTS_FUNC: ${{ startsWith('Hello', 'He') }}
+          ENDS_FUNC: ${{ endsWith('Hello', 'lo')}}
   generate:
     runs-on: ubuntu-latest
     steps:
